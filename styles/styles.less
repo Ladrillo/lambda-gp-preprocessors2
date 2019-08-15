@@ -6,7 +6,7 @@
 // mixins
 // namespacing our mixins
 #flexbox-mixins() {
-  .flex-baseline(@gaga) { // declaration
+  .flex-baseline(@gaga:space-between) { // declaration
     display: flex;
     align-items: baseline;
     justify-content: @gaga;
@@ -75,7 +75,7 @@
   }
 
   header {
-    #flexbox-mixins.flex-baseline(space-between);
+    #flexbox-mixins.flex-baseline();
     padding: 1rem;
     background-color: @primaryColor;
     color: @white;
