@@ -9,19 +9,18 @@
   align-items: baseline;
   justify-content: @gaga;
 }
+// devices (escaped variables)
+@mobile: ~"(max-width: 550px)";
+@tablet: ~"(max-width: 750px)";
 
 // general styles
 :root {
   font-size: @defaultFontSize;
 
-  @media (max-width: 550px) {
+  @media @mobile {
     font-size: @mobileFontSize;
   }
 }
-
-// devices (escaped variables)
-@mobile: ~"(max-width: 550px)";
-@tablet: ~"(max-width: 750px)";
 
 #petsContainer {
   margin: 0 auto;
