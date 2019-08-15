@@ -1,0 +1,14 @@
+{
+  "name": "less-2",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo hello",
+    "server": "live-server",
+    "less": "less-watch-compiler ./styles ./css styles.less"
+  },
+  "dependencies": {
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0",
+    "live-server": "^1.2.1"
+  }
+}

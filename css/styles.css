@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* box sizing border box */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  font-size: 100%;
+}
+@media (max-width: 550px) {
+  :root {
+    font-size: 150%;
+  }
+}
+#petsContainer {
+  margin: 0 auto;
+  max-width: 800px;
+}
+#petsContainer .boxes {
+  display: flex;
+}
+@media (max-width: 750px) {
+  #petsContainer .boxes {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 550px) {
+  #petsContainer .boxes {
+    flex-direction: column;
+  }
+}
+#petsContainer h1,
+#petsContainer h3 {
+  font-weight: bold;
+}
+#petsContainer h1 {
+  font-size: 2rem;
+}
+#petsContainer h3 {
+  font-size: 1.5rem;
+}
+#petsContainer .box {
+  padding: 1rem;
+}
+#petsContainer .box.box-a {
+  background-color: #f6d55c;
+}
+#petsContainer .box.box-b {
+  background-color: #fffffa;
+  border: 0.25rem dashed #173f5f;
+}
+#petsContainer .box.box-c {
+  background-color: #f6d55c;
+}
+#petsContainer header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #20639b;
+  color: #fffffa;
+}
+@media (max-width: 550px) {
+  #petsContainer header {
+    flex-direction: column;
+  }
+}
+#petsContainer header:hover {
+  background-color: #3caea3;
+}
+#petsContainer header a {
+  color: inherit;
+}
+#petsContainer article p {
+  margin-top: 0.5rem;
+}
+#petsContainer article p:nth-of-type(1) {
+  color: #173f5f;
+}
+#petsContainer article p:nth-of-type(2) {
+  color: #20639b;
+  line-height: 1.5;
+}
+#petsContainer footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #3caea3;
+  color: #fffffa;
+  font-size: 75%;
+}
+#petsContainer footer p {
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 0.25em solid #fffffa;
+}
