@@ -19,6 +19,10 @@
   }
 }
 
+// devices (escaped variables)
+@mobile: ~"(max-width: 550px)";
+@tablet: ~"(max-width: 750px)";
+
 #petsContainer {
   margin: 0 auto;
   max-width: @maxWidthWebsite;
@@ -26,11 +30,11 @@
   .boxes {
     display: flex;
     
-    @media (max-width: 750px) {
+    @media @tablet {
       flex-direction: row-reverse;
     }
     
-    @media (max-width: 550px) {
+    @media @mobile {
       flex-direction: column;
     }
   }
