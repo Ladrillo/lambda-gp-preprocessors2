@@ -109,13 +109,19 @@
   // }
 
 // ================
-
+// declaration
+.buttonify-paragraph(@gaga) {
+  margin: 1em 0;
+  padding: .5em;
+  border: .25em solid @gaga;
+}
 // ================
 
   footer p {
-    margin: 1em 0;
-    padding: .5em;
-    border: .25em solid purple;
+    .buttonify-paragraph(@primaryColor); // invocation
+    // margin: 1em 0;
+    // padding: .5em;
+    // border: .25em solid purple;
   }
 }
 
