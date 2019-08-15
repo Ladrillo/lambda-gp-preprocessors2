@@ -18,7 +18,7 @@
 @funnyBorder: 0.25rem dashed @black;
 
 // mixins
-.flex-baseline-between(@justifyContent) {
+.flex-baseline(@justifyContent) {
   display: flex;
   align-items: baseline;
   justify-content: @justifyContent;
@@ -79,7 +79,7 @@
   }
 
   header {
-    .flex-baseline-between(space-between);
+    .flex-baseline(space-between);
     padding: 1rem;
     background-color: @primaryColor;
     color: @white;
@@ -111,7 +111,7 @@
   }
 
   footer {
-    .flex-baseline-between(center);
+    .flex-baseline(center);
     background-color: @tertiaryColor;
     color: @white;
     font-size: 75%;
