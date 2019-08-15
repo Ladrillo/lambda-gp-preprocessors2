@@ -17,6 +17,13 @@
 // borders
 @funnyBorder: 0.25rem dashed @black;
 
+// mixins
+.flex-baseline-between(@justifyContent) {
+  display: flex;
+  align-items: baseline;
+  justify-content: @justifyContent;
+}
+
 // general styles
 :root {
   font-size: @defaultFontSize;
@@ -69,12 +76,6 @@
     &.box-c {
       background-color: @secondaryColor
     }
-  }
-
-  .flex-baseline-between(@justifyContent) {
-    display: flex;
-    align-items: baseline;
-    justify-content: @justifyContent;
   }
 
   header {
