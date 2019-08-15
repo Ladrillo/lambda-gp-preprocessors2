@@ -4,11 +4,15 @@
 @import "varibles.less";
 
 // mixins
-.flex-baseline(@gaga) { // declaration
-  display: flex;
-  align-items: baseline;
-  justify-content: @gaga;
+// namespacing our mixins
+#flexbox-mixins() {
+  .flex-baseline(@gaga) { // declaration
+    display: flex;
+    align-items: baseline;
+    justify-content: @gaga;
+  }
 }
+
 // devices (escaped variables)
 @mobile: ~"(max-width: 550px)";
 @tablet: ~"(max-width: 750px)";
@@ -68,7 +72,7 @@
   }
 
   header {
-    .flex-baseline(space-between);
+    #flexbox-mixins.flex-baseline(space-between);
     padding: 1rem;
     background-color: @primaryColor;
     color: @white;
@@ -100,7 +104,7 @@
   }
 
   footer {
-    .flex-baseline(center);
+    #flexbox-mixins.flex-baseline(center);
     background-color: @tertiaryColor;
     color: @white;
     font-size: 75%;
