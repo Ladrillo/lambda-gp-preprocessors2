@@ -4,10 +4,10 @@
 @import "varibles.less";
 
 // mixins
-.flex-baseline(@justifyContent) {
+.flex-baseline(@gaga) { // declaration
   display: flex;
   align-items: baseline;
-  justify-content: @justifyContent;
+  justify-content: @gaga;
 }
 
 // general styles
@@ -103,9 +103,19 @@
     font-size: 75%;
   }
 
+  // create a mixing that takes color
+  // footer p {
+  //    .my-parametric-mixin(pink)
+  // }
+
+// ================
+
+// ================
+
   footer p {
     margin: 1em 0;
     padding: .5em;
-    border: .25em solid @white;
+    border: .25em solid purple;
   }
 }
+
